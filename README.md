@@ -1,2 +1,1 @@
-# machine-learning-practice
-machine-learning-practice
+scikit-learn-practice
