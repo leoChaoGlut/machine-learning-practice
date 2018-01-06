@@ -1,7 +1,7 @@
 from pandas import read_csv
 from sklearn.feature_selection.univariate_selection import SelectKBest, chi2
 
-filepath = '../../data/pima_data.csv'
+filepath = '../data/pima_data.csv'
 
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 

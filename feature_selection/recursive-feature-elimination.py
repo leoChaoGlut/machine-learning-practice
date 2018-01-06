@@ -2,7 +2,7 @@ from pandas import read_csv
 from sklearn.feature_selection.rfe import RFE
 from sklearn.linear_model.logistic import LogisticRegression
 
-filepath = '../../data/pima_data.csv'
+filepath = '../data/pima_data.csv'
 
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 
