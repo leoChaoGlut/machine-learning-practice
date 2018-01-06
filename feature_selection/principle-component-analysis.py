@@ -1,16 +1,11 @@
-from pandas import read_csv
+from sklearn import datasets
 from sklearn.decomposition.pca import PCA
 
-filepath = '../data/pima_data.csv'
+iris = datasets.load_iris()
 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+pca = PCA(n_components=2)
 
-data = read_csv(filepath, names=names)
+fit = pca.fit(iris.data)
 
-X = data.values[:, 0:8]
-y = data.values[:, 8]
-
-pca = PCA(n_components=3)
-fit = pca.fit(X)
 print(fit.explained_variance_ratio_)
 print(fit.components_)

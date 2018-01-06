@@ -1,5 +1,5 @@
 from sklearn import datasets
-from sklearn.linear_model.logistic import LogisticRegression
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score, KFold
 
 iris = datasets.load_iris()

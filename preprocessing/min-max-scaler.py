@@ -1,18 +1,12 @@
-from pandas import read_csv
+from sklearn import datasets
+
 from sklearn.preprocessing.data import MinMaxScaler
 
-filepath = '../data/pima_data.csv'
-
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
-
-data = read_csv(filepath, names=names)
-
-X = data.values[:, 0:8]
-y = data.values[:, 8]
+iris = datasets.load_iris()
 
 transformer = MinMaxScaler()
-newX = transformer.fit_transform(X)
+newX = transformer.fit_transform(iris.data)
 
-print(X)
+print(iris.data)
 print('==============')
 print(newX)
