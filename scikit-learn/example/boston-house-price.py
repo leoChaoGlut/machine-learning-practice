@@ -43,8 +43,8 @@ def visualization():
 
 
 def exec():
-    # visualization()
-    evaluation()
+    visualization()
+    # evaluation()
 
 
 if __name__ == '__main__':

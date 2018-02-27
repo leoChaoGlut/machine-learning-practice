@@ -1,6 +1,1302 @@
-{
-  'hive': [
-    'connector.name=hive-hadoop2',
-    'hive.metastore.uri=thrift://localhost:9083'
-  ]
-}
+[
+  {
+    "time": "2016-11-14",
+    "name": "FivePlus-正佳店",
+    "data": 507
+  },
+  {
+    "time": "2016-11-15",
+    "name": "FivePlus-正佳店",
+    "data": 678
+  },
+  {
+    "time": "2016-11-16",
+    "name": "FivePlus-正佳店",
+    "data": 798
+  },
+  {
+    "time": "2016-11-17",
+    "name": "FivePlus-正佳店",
+    "data": 641
+  },
+  {
+    "time": "2016-11-18",
+    "name": "FivePlus-正佳店",
+    "data": 738
+  },
+  {
+    "time": "2016-11-19",
+    "name": "FivePlus-正佳店",
+    "data": 1323
+  },
+  {
+    "time": "2016-11-20",
+    "name": "FivePlus-正佳店",
+    "data": 866
+  },
+  {
+    "time": "2016-11-21",
+    "name": "FivePlus-正佳店",
+    "data": 709
+  },
+  {
+    "time": "2016-11-22",
+    "name": "FivePlus-正佳店",
+    "data": 605
+  },
+  {
+    "time": "2016-11-23",
+    "name": "FivePlus-正佳店",
+    "data": 576
+  },
+  {
+    "time": "2016-11-24",
+    "name": "FivePlus-正佳店",
+    "data": 694
+  },
+  {
+    "time": "2016-11-25",
+    "name": "FivePlus-正佳店",
+    "data": 712
+  },
+  {
+    "time": "2016-11-26",
+    "name": "FivePlus-正佳店",
+    "data": 1164
+  },
+  {
+    "time": "2016-11-27",
+    "name": "FivePlus-正佳店",
+    "data": 1210
+  },
+  {
+    "time": "2016-11-28",
+    "name": "FivePlus-正佳店",
+    "data": 768
+  },
+  {
+    "time": "2016-11-29",
+    "name": "FivePlus-正佳店",
+    "data": 591
+  },
+  {
+    "time": "2016-11-30",
+    "name": "FivePlus-正佳店",
+    "data": 578
+  },
+  {
+    "time": "2016-12-01",
+    "name": "FivePlus-正佳店",
+    "data": 627
+  },
+  {
+    "time": "2016-12-02",
+    "name": "FivePlus-正佳店",
+    "data": 630
+  },
+  {
+    "time": "2016-12-03",
+    "name": "FivePlus-正佳店",
+    "data": 1333
+  },
+  {
+    "time": "2016-12-04",
+    "name": "FivePlus-正佳店",
+    "data": 1025
+  },
+  {
+    "time": "2016-12-05",
+    "name": "FivePlus-正佳店",
+    "data": 565
+  },
+  {
+    "time": "2016-12-06",
+    "name": "FivePlus-正佳店",
+    "data": 559
+  },
+  {
+    "time": "2016-12-07",
+    "name": "FivePlus-正佳店",
+    "data": 533
+  },
+  {
+    "time": "2016-12-08",
+    "name": "FivePlus-正佳店",
+    "data": 587
+  },
+  {
+    "time": "2016-12-09",
+    "name": "FivePlus-正佳店",
+    "data": 802
+  },
+  {
+    "time": "2016-12-10",
+    "name": "FivePlus-正佳店",
+    "data": 1641
+  },
+  {
+    "time": "2016-12-11",
+    "name": "FivePlus-正佳店",
+    "data": 1405
+  },
+  {
+    "time": "2016-12-12",
+    "name": "FivePlus-正佳店",
+    "data": 831
+  },
+  {
+    "time": "2016-12-13",
+    "name": "FivePlus-正佳店",
+    "data": 624
+  },
+  {
+    "time": "2016-12-14",
+    "name": "FivePlus-正佳店",
+    "data": 641
+  },
+  {
+    "time": "2016-12-15",
+    "name": "FivePlus-正佳店",
+    "data": 788
+  },
+  {
+    "time": "2016-12-16",
+    "name": "FivePlus-正佳店",
+    "data": 995
+  },
+  {
+    "time": "2016-12-17",
+    "name": "FivePlus-正佳店",
+    "data": 1890
+  },
+  {
+    "time": "2016-12-18",
+    "name": "FivePlus-正佳店",
+    "data": 1662
+  },
+  {
+    "time": "2016-12-19",
+    "name": "FivePlus-正佳店",
+    "data": 674
+  },
+  {
+    "time": "2016-12-20",
+    "name": "FivePlus-正佳店",
+    "data": 609
+  },
+  {
+    "time": "2016-12-21",
+    "name": "FivePlus-正佳店",
+    "data": 581
+  },
+  {
+    "time": "2016-12-22",
+    "name": "FivePlus-正佳店",
+    "data": 651
+  },
+  {
+    "time": "2016-12-23",
+    "name": "FivePlus-正佳店",
+    "data": 717
+  },
+  {
+    "time": "2016-12-24",
+    "name": "FivePlus-正佳店",
+    "data": 1938
+  },
+  {
+    "time": "2016-12-25",
+    "name": "FivePlus-正佳店",
+    "data": 1611
+  },
+  {
+    "time": "2016-12-26",
+    "name": "FivePlus-正佳店",
+    "data": 576
+  },
+  {
+    "time": "2016-12-27",
+    "name": "FivePlus-正佳店",
+    "data": 721
+  },
+  {
+    "time": "2016-12-28",
+    "name": "FivePlus-正佳店",
+    "data": 640
+  },
+  {
+    "time": "2016-12-29",
+    "name": "FivePlus-正佳店",
+    "data": 891
+  },
+  {
+    "time": "2016-12-30",
+    "name": "FivePlus-正佳店",
+    "data": 930
+  },
+  {
+    "time": "2016-12-31",
+    "name": "FivePlus-正佳店",
+    "data": 2061
+  },
+  {
+    "time": "2017-01-01",
+    "name": "FivePlus-正佳店",
+    "data": 2703
+  },
+  {
+    "time": "2017-01-02",
+    "name": "FivePlus-正佳店",
+    "data": 1410
+  },
+  {
+    "time": "2017-01-03",
+    "name": "FivePlus-正佳店",
+    "data": 716
+  },
+  {
+    "time": "2017-01-04",
+    "name": "FivePlus-正佳店",
+    "data": 641
+  },
+  {
+    "time": "2017-01-05",
+    "name": "FivePlus-正佳店",
+    "data": 839
+  },
+  {
+    "time": "2017-01-06",
+    "name": "FivePlus-正佳店",
+    "data": 754
+  },
+  {
+    "time": "2017-01-07",
+    "name": "FivePlus-正佳店",
+    "data": 1438
+  },
+  {
+    "time": "2017-01-08",
+    "name": "FivePlus-正佳店",
+    "data": 1444
+  },
+  {
+    "time": "2017-01-09",
+    "name": "FivePlus-正佳店",
+    "data": 749
+  },
+  {
+    "time": "2017-01-10",
+    "name": "FivePlus-正佳店",
+    "data": 662
+  },
+  {
+    "time": "2017-01-11",
+    "name": "FivePlus-正佳店",
+    "data": 806
+  },
+  {
+    "time": "2017-01-12",
+    "name": "FivePlus-正佳店",
+    "data": 905
+  },
+  {
+    "time": "2017-01-13",
+    "name": "FivePlus-正佳店",
+    "data": 914
+  },
+  {
+    "time": "2017-01-14",
+    "name": "FivePlus-正佳店",
+    "data": 2083
+  },
+  {
+    "time": "2017-01-15",
+    "name": "FivePlus-正佳店",
+    "data": 2156
+  },
+  {
+    "time": "2017-01-16",
+    "name": "FivePlus-正佳店",
+    "data": 1015
+  },
+  {
+    "time": "2017-01-17",
+    "name": "FivePlus-正佳店",
+    "data": 1066
+  },
+  {
+    "time": "2017-01-18",
+    "name": "FivePlus-正佳店",
+    "data": 1009
+  },
+  {
+    "time": "2017-01-19",
+    "name": "FivePlus-正佳店",
+    "data": 1022
+  },
+  {
+    "time": "2017-01-20",
+    "name": "FivePlus-正佳店",
+    "data": 1112
+  },
+  {
+    "time": "2017-01-21",
+    "name": "FivePlus-正佳店",
+    "data": 2199
+  },
+  {
+    "time": "2017-01-22",
+    "name": "FivePlus-正佳店",
+    "data": 1411
+  },
+  {
+    "time": "2017-01-23",
+    "name": "FivePlus-正佳店",
+    "data": 1058
+  },
+  {
+    "time": "2017-01-24",
+    "name": "FivePlus-正佳店",
+    "data": 1310
+  },
+  {
+    "time": "2017-01-25",
+    "name": "FivePlus-正佳店",
+    "data": 1055
+  },
+  {
+    "time": "2017-01-26",
+    "name": "FivePlus-正佳店",
+    "data": 1089
+  },
+  {
+    "time": "2017-01-27",
+    "name": "FivePlus-正佳店",
+    "data": 511
+  },
+  {
+    "time": "2017-01-28",
+    "name": "FivePlus-正佳店",
+    "data": 626
+  },
+  {
+    "time": "2017-01-29",
+    "name": "FivePlus-正佳店",
+    "data": 589
+  },
+  {
+    "time": "2017-01-30",
+    "name": "FivePlus-正佳店",
+    "data": 672
+  },
+  {
+    "time": "2017-01-31",
+    "name": "FivePlus-正佳店",
+    "data": 676
+  },
+  {
+    "time": "2017-02-01",
+    "name": "FivePlus-正佳店",
+    "data": 593
+  },
+  {
+    "time": "2017-02-02",
+    "name": "FivePlus-正佳店",
+    "data": 575
+  },
+  {
+    "time": "2017-02-03",
+    "name": "FivePlus-正佳店",
+    "data": 517
+  },
+  {
+    "time": "2017-02-04",
+    "name": "FivePlus-正佳店",
+    "data": 621
+  },
+  {
+    "time": "2017-02-05",
+    "name": "FivePlus-正佳店",
+    "data": 691
+  },
+  {
+    "time": "2017-02-06",
+    "name": "FivePlus-正佳店",
+    "data": 596
+  },
+  {
+    "time": "2017-02-07",
+    "name": "FivePlus-正佳店",
+    "data": 444
+  },
+  {
+    "time": "2017-02-08",
+    "name": "FivePlus-正佳店",
+    "data": 431
+  },
+  {
+    "time": "2017-02-09",
+    "name": "FivePlus-正佳店",
+    "data": 575
+  },
+  {
+    "time": "2017-02-10",
+    "name": "FivePlus-正佳店",
+    "data": 455
+  },
+  {
+    "time": "2017-02-11",
+    "name": "FivePlus-正佳店",
+    "data": 781
+  },
+  {
+    "time": "2017-02-12",
+    "name": "FivePlus-正佳店",
+    "data": 723
+  },
+  {
+    "time": "2017-02-13",
+    "name": "FivePlus-正佳店",
+    "data": 379
+  },
+  {
+    "time": "2017-02-14",
+    "name": "FivePlus-正佳店",
+    "data": 581
+  },
+  {
+    "time": "2017-02-15",
+    "name": "FivePlus-正佳店",
+    "data": 478
+  },
+  {
+    "time": "2017-02-16",
+    "name": "FivePlus-正佳店",
+    "data": 501
+  },
+  {
+    "time": "2017-02-17",
+    "name": "FivePlus-正佳店",
+    "data": 547
+  },
+  {
+    "time": "2017-02-18",
+    "name": "FivePlus-正佳店",
+    "data": 1071
+  },
+  {
+    "time": "2017-02-19",
+    "name": "FivePlus-正佳店",
+    "data": 1004
+  },
+  {
+    "time": "2017-02-20",
+    "name": "FivePlus-正佳店",
+    "data": 588
+  },
+  {
+    "time": "2017-02-21",
+    "name": "FivePlus-正佳店",
+    "data": 483
+  },
+  {
+    "time": "2017-02-22",
+    "name": "FivePlus-正佳店",
+    "data": 475
+  },
+  {
+    "time": "2017-02-23",
+    "name": "FivePlus-正佳店",
+    "data": 468
+  },
+  {
+    "time": "2017-02-24",
+    "name": "FivePlus-正佳店",
+    "data": 389
+  },
+  {
+    "time": "2017-02-25",
+    "name": "FivePlus-正佳店",
+    "data": 992
+  },
+  {
+    "time": "2017-02-26",
+    "name": "FivePlus-正佳店",
+    "data": 889
+  },
+  {
+    "time": "2017-02-27",
+    "name": "FivePlus-正佳店",
+    "data": 465
+  },
+  {
+    "time": "2017-02-28",
+    "name": "FivePlus-正佳店",
+    "data": 411
+  },
+  {
+    "time": "2017-03-01",
+    "name": "FivePlus-正佳店",
+    "data": 446
+  },
+  {
+    "time": "2017-03-02",
+    "name": "FivePlus-正佳店",
+    "data": 503
+  },
+  {
+    "time": "2017-03-03",
+    "name": "FivePlus-正佳店",
+    "data": 517
+  },
+  {
+    "time": "2017-03-04",
+    "name": "FivePlus-正佳店",
+    "data": 1157
+  },
+  {
+    "time": "2017-03-05",
+    "name": "FivePlus-正佳店",
+    "data": 1071
+  },
+  {
+    "time": "2017-03-06",
+    "name": "FivePlus-正佳店",
+    "data": 443
+  },
+  {
+    "time": "2017-03-07",
+    "name": "FivePlus-正佳店",
+    "data": 587
+  },
+  {
+    "time": "2017-03-08",
+    "name": "FivePlus-正佳店",
+    "data": 1065
+  },
+  {
+    "time": "2017-03-09",
+    "name": "FivePlus-正佳店",
+    "data": 362
+  },
+  {
+    "time": "2017-03-10",
+    "name": "FivePlus-正佳店",
+    "data": 563
+  },
+  {
+    "time": "2017-03-11",
+    "name": "FivePlus-正佳店",
+    "data": 1120
+  },
+  {
+    "time": "2017-03-12",
+    "name": "FivePlus-正佳店",
+    "data": 892
+  },
+  {
+    "time": "2017-03-13",
+    "name": "FivePlus-正佳店",
+    "data": 439
+  },
+  {
+    "time": "2017-03-14",
+    "name": "FivePlus-正佳店",
+    "data": 465
+  },
+  {
+    "time": "2017-03-15",
+    "name": "FivePlus-正佳店",
+    "data": 466
+  },
+  {
+    "time": "2017-03-16",
+    "name": "FivePlus-正佳店",
+    "data": 472
+  },
+  {
+    "time": "2017-03-17",
+    "name": "FivePlus-正佳店",
+    "data": 569
+  },
+  {
+    "time": "2017-03-18",
+    "name": "FivePlus-正佳店",
+    "data": 1169
+  },
+  {
+    "time": "2017-03-19",
+    "name": "FivePlus-正佳店",
+    "data": 783
+  },
+  {
+    "time": "2017-03-20",
+    "name": "FivePlus-正佳店",
+    "data": 483
+  },
+  {
+    "time": "2017-03-21",
+    "name": "FivePlus-正佳店",
+    "data": 566
+  },
+  {
+    "time": "2017-03-22",
+    "name": "FivePlus-正佳店",
+    "data": 442
+  },
+  {
+    "time": "2017-03-23",
+    "name": "FivePlus-正佳店",
+    "data": 533
+  },
+  {
+    "time": "2017-03-24",
+    "name": "FivePlus-正佳店",
+    "data": 589
+  },
+  {
+    "time": "2017-03-25",
+    "name": "FivePlus-正佳店",
+    "data": 1252
+  },
+  {
+    "time": "2017-03-26",
+    "name": "FivePlus-正佳店",
+    "data": 1092
+  },
+  {
+    "time": "2017-03-27",
+    "name": "FivePlus-正佳店",
+    "data": 463
+  },
+  {
+    "time": "2017-03-28",
+    "name": "FivePlus-正佳店",
+    "data": 458
+  },
+  {
+    "time": "2017-03-29",
+    "name": "FivePlus-正佳店",
+    "data": 470
+  },
+  {
+    "time": "2017-03-30",
+    "name": "FivePlus-正佳店",
+    "data": 428
+  },
+  {
+    "time": "2017-03-31",
+    "name": "FivePlus-正佳店",
+    "data": 839
+  },
+  {
+    "time": "2017-04-01",
+    "name": "FivePlus-正佳店",
+    "data": 737
+  },
+  {
+    "time": "2017-04-02",
+    "name": "FivePlus-正佳店",
+    "data": 1481
+  },
+  {
+    "time": "2017-04-03",
+    "name": "FivePlus-正佳店",
+    "data": 1634
+  },
+  {
+    "time": "2017-04-04",
+    "name": "FivePlus-正佳店",
+    "data": 1155
+  },
+  {
+    "time": "2017-04-05",
+    "name": "FivePlus-正佳店",
+    "data": 474
+  },
+  {
+    "time": "2017-04-06",
+    "name": "FivePlus-正佳店",
+    "data": 452
+  },
+  {
+    "time": "2017-04-07",
+    "name": "FivePlus-正佳店",
+    "data": 534
+  },
+  {
+    "time": "2017-04-08",
+    "name": "FivePlus-正佳店",
+    "data": 1271
+  },
+  {
+    "time": "2017-04-09",
+    "name": "FivePlus-正佳店",
+    "data": 1108
+  },
+  {
+    "time": "2017-04-10",
+    "name": "FivePlus-正佳店",
+    "data": 688
+  },
+  {
+    "time": "2017-04-11",
+    "name": "FivePlus-正佳店",
+    "data": 599
+  },
+  {
+    "time": "2017-04-12",
+    "name": "FivePlus-正佳店",
+    "data": 468
+  },
+  {
+    "time": "2017-04-13",
+    "name": "FivePlus-正佳店",
+    "data": 502
+  },
+  {
+    "time": "2017-04-14",
+    "name": "FivePlus-正佳店",
+    "data": 709
+  },
+  {
+    "time": "2017-04-15",
+    "name": "FivePlus-正佳店",
+    "data": 1310
+  },
+  {
+    "time": "2017-04-16",
+    "name": "FivePlus-正佳店",
+    "data": 1212
+  },
+  {
+    "time": "2017-04-17",
+    "name": "FivePlus-正佳店",
+    "data": 544
+  },
+  {
+    "time": "2017-04-18",
+    "name": "FivePlus-正佳店",
+    "data": 579
+  },
+  {
+    "time": "2017-04-19",
+    "name": "FivePlus-正佳店",
+    "data": 512
+  },
+  {
+    "time": "2017-04-20",
+    "name": "FivePlus-正佳店",
+    "data": 569
+  },
+  {
+    "time": "2017-04-21",
+    "name": "FivePlus-正佳店",
+    "data": 720
+  },
+  {
+    "time": "2017-04-22",
+    "name": "FivePlus-正佳店",
+    "data": 1637
+  },
+  {
+    "time": "2017-04-23",
+    "name": "FivePlus-正佳店",
+    "data": 1283
+  },
+  {
+    "time": "2017-04-24",
+    "name": "FivePlus-正佳店",
+    "data": 663
+  },
+  {
+    "time": "2017-04-25",
+    "name": "FivePlus-正佳店",
+    "data": 610
+  },
+  {
+    "time": "2017-04-26",
+    "name": "FivePlus-正佳店",
+    "data": 500
+  },
+  {
+    "time": "2017-04-27",
+    "name": "FivePlus-正佳店",
+    "data": 534
+  },
+  {
+    "time": "2017-04-28",
+    "name": "FivePlus-正佳店",
+    "data": 816
+  },
+  {
+    "time": "2017-04-29",
+    "name": "FivePlus-正佳店",
+    "data": 1741
+  },
+  {
+    "time": "2017-04-30",
+    "name": "FivePlus-正佳店",
+    "data": 1973
+  },
+  {
+    "time": "2017-05-01",
+    "name": "FivePlus-正佳店",
+    "data": 1547
+  },
+  {
+    "time": "2017-05-02",
+    "name": "FivePlus-正佳店",
+    "data": 584
+  },
+  {
+    "time": "2017-05-03",
+    "name": "FivePlus-正佳店",
+    "data": 543
+  },
+  {
+    "time": "2017-05-04",
+    "name": "FivePlus-正佳店",
+    "data": 576
+  },
+  {
+    "time": "2017-05-05",
+    "name": "FivePlus-正佳店",
+    "data": 673
+  },
+  {
+    "time": "2017-05-06",
+    "name": "FivePlus-正佳店",
+    "data": 1306
+  },
+  {
+    "time": "2017-05-07",
+    "name": "FivePlus-正佳店",
+    "data": 923
+  },
+  {
+    "time": "2017-05-08",
+    "name": "FivePlus-正佳店",
+    "data": 523
+  },
+  {
+    "time": "2017-05-09",
+    "name": "FivePlus-正佳店",
+    "data": 471
+  },
+  {
+    "time": "2017-05-10",
+    "name": "FivePlus-正佳店",
+    "data": 478
+  },
+  {
+    "time": "2017-05-11",
+    "name": "FivePlus-正佳店",
+    "data": 450
+  },
+  {
+    "time": "2017-05-12",
+    "name": "FivePlus-正佳店",
+    "data": 535
+  },
+  {
+    "time": "2017-05-13",
+    "name": "FivePlus-正佳店",
+    "data": 888
+  },
+  {
+    "time": "2017-05-14",
+    "name": "FivePlus-正佳店",
+    "data": 1055
+  },
+  {
+    "time": "2017-05-15",
+    "name": "FivePlus-正佳店",
+    "data": 579
+  },
+  {
+    "time": "2017-05-16",
+    "name": "FivePlus-正佳店",
+    "data": 429
+  },
+  {
+    "time": "2017-05-17",
+    "name": "FivePlus-正佳店",
+    "data": 532
+  },
+  {
+    "time": "2017-05-18",
+    "name": "FivePlus-正佳店",
+    "data": 473
+  },
+  {
+    "time": "2017-05-19",
+    "name": "FivePlus-正佳店",
+    "data": 690
+  },
+  {
+    "time": "2017-05-20",
+    "name": "FivePlus-正佳店",
+    "data": 1360
+  },
+  {
+    "time": "2017-05-21",
+    "name": "FivePlus-正佳店",
+    "data": 1063
+  },
+  {
+    "time": "2017-05-22",
+    "name": "FivePlus-正佳店",
+    "data": 411
+  },
+  {
+    "time": "2017-05-23",
+    "name": "FivePlus-正佳店",
+    "data": 506
+  },
+  {
+    "time": "2017-05-24",
+    "name": "FivePlus-正佳店",
+    "data": 487
+  },
+  {
+    "time": "2017-05-25",
+    "name": "FivePlus-正佳店",
+    "data": 489
+  },
+  {
+    "time": "2017-05-26",
+    "name": "FivePlus-正佳店",
+    "data": 567
+  },
+  {
+    "time": "2017-05-27",
+    "name": "FivePlus-正佳店",
+    "data": 661
+  },
+  {
+    "time": "2017-05-28",
+    "name": "FivePlus-正佳店",
+    "data": 1439
+  },
+  {
+    "time": "2017-05-29",
+    "name": "FivePlus-正佳店",
+    "data": 1419
+  },
+  {
+    "time": "2017-05-30",
+    "name": "FivePlus-正佳店",
+    "data": 841
+  },
+  {
+    "time": "2017-05-31",
+    "name": "FivePlus-正佳店",
+    "data": 475
+  },
+  {
+    "time": "2017-06-01",
+    "name": "FivePlus-正佳店",
+    "data": 581
+  },
+  {
+    "time": "2017-06-02",
+    "name": "FivePlus-正佳店",
+    "data": 457
+  },
+  {
+    "time": "2017-06-03",
+    "name": "FivePlus-正佳店",
+    "data": 1034
+  },
+  {
+    "time": "2017-06-04",
+    "name": "FivePlus-正佳店",
+    "data": 916
+  },
+  {
+    "time": "2017-06-05",
+    "name": "FivePlus-正佳店",
+    "data": 422
+  },
+  {
+    "time": "2017-06-06",
+    "name": "FivePlus-正佳店",
+    "data": 502
+  },
+  {
+    "time": "2017-06-07",
+    "name": "FivePlus-正佳店",
+    "data": 405
+  },
+  {
+    "time": "2017-06-08",
+    "name": "FivePlus-正佳店",
+    "data": 538
+  },
+  {
+    "time": "2017-06-09",
+    "name": "FivePlus-正佳店",
+    "data": 569
+  },
+  {
+    "time": "2017-06-10",
+    "name": "FivePlus-正佳店",
+    "data": 1104
+  },
+  {
+    "time": "2017-06-11",
+    "name": "FivePlus-正佳店",
+    "data": 922
+  },
+  {
+    "time": "2017-06-12",
+    "name": "FivePlus-正佳店",
+    "data": 487
+  },
+  {
+    "time": "2017-06-13",
+    "name": "FivePlus-正佳店",
+    "data": 332
+  },
+  {
+    "time": "2017-06-14",
+    "name": "FivePlus-正佳店",
+    "data": 511
+  },
+  {
+    "time": "2017-06-15",
+    "name": "FivePlus-正佳店",
+    "data": 862
+  },
+  {
+    "time": "2017-06-16",
+    "name": "FivePlus-正佳店",
+    "data": 893
+  },
+  {
+    "time": "2017-06-17",
+    "name": "FivePlus-正佳店",
+    "data": 2216
+  },
+  {
+    "time": "2017-06-18",
+    "name": "FivePlus-正佳店",
+    "data": 1861
+  },
+  {
+    "time": "2017-06-19",
+    "name": "FivePlus-正佳店",
+    "data": 735
+  },
+  {
+    "time": "2017-06-20",
+    "name": "FivePlus-正佳店",
+    "data": 849
+  },
+  {
+    "time": "2017-06-21",
+    "name": "FivePlus-正佳店",
+    "data": 845
+  },
+  {
+    "time": "2017-06-22",
+    "name": "FivePlus-正佳店",
+    "data": 874
+  },
+  {
+    "time": "2017-06-23",
+    "name": "FivePlus-正佳店",
+    "data": 1108
+  },
+  {
+    "time": "2017-06-24",
+    "name": "FivePlus-正佳店",
+    "data": 1997
+  },
+  {
+    "time": "2017-06-25",
+    "name": "FivePlus-正佳店",
+    "data": 1858
+  },
+  {
+    "time": "2017-06-26",
+    "name": "FivePlus-正佳店",
+    "data": 766
+  },
+  {
+    "time": "2017-06-27",
+    "name": "FivePlus-正佳店",
+    "data": 641
+  },
+  {
+    "time": "2017-06-28",
+    "name": "FivePlus-正佳店",
+    "data": 755
+  },
+  {
+    "time": "2017-06-29",
+    "name": "FivePlus-正佳店",
+    "data": 852
+  },
+  {
+    "time": "2017-06-30",
+    "name": "FivePlus-正佳店",
+    "data": 1062
+  },
+  {
+    "time": "2017-07-01",
+    "name": "FivePlus-正佳店",
+    "data": 1775
+  },
+  {
+    "time": "2017-07-02",
+    "name": "FivePlus-正佳店",
+    "data": 1299
+  },
+  {
+    "time": "2017-07-03",
+    "name": "FivePlus-正佳店",
+    "data": 709
+  },
+  {
+    "time": "2017-07-04",
+    "name": "FivePlus-正佳店",
+    "data": 688
+  },
+  {
+    "time": "2017-07-05",
+    "name": "FivePlus-正佳店",
+    "data": 578
+  },
+  {
+    "time": "2017-07-06",
+    "name": "FivePlus-正佳店",
+    "data": 618
+  },
+  {
+    "time": "2017-07-07",
+    "name": "FivePlus-正佳店",
+    "data": 607
+  },
+  {
+    "time": "2017-07-08",
+    "name": "FivePlus-正佳店",
+    "data": 1148
+  },
+  {
+    "time": "2017-07-09",
+    "name": "FivePlus-正佳店",
+    "data": 1153
+  },
+  {
+    "time": "2017-07-10",
+    "name": "FivePlus-正佳店",
+    "data": 577
+  },
+  {
+    "time": "2017-07-11",
+    "name": "FivePlus-正佳店",
+    "data": 509
+  },
+  {
+    "time": "2017-07-12",
+    "name": "FivePlus-正佳店",
+    "data": 584
+  },
+  {
+    "time": "2017-07-13",
+    "name": "FivePlus-正佳店",
+    "data": 530
+  },
+  {
+    "time": "2017-07-14",
+    "name": "FivePlus-正佳店",
+    "data": 675
+  },
+  {
+    "time": "2017-07-15",
+    "name": "FivePlus-正佳店",
+    "data": 1263
+  },
+  {
+    "time": "2017-07-16",
+    "name": "FivePlus-正佳店",
+    "data": 1104
+  },
+  {
+    "time": "2017-07-17",
+    "name": "FivePlus-正佳店",
+    "data": 595
+  },
+  {
+    "time": "2017-07-18",
+    "name": "FivePlus-正佳店",
+    "data": 474
+  },
+  {
+    "time": "2017-07-19",
+    "name": "FivePlus-正佳店",
+    "data": 643
+  },
+  {
+    "time": "2017-07-20",
+    "name": "FivePlus-正佳店",
+    "data": 605
+  },
+  {
+    "time": "2017-07-21",
+    "name": "FivePlus-正佳店",
+    "data": 657
+  },
+  {
+    "time": "2017-07-22",
+    "name": "FivePlus-正佳店",
+    "data": 1187
+  },
+  {
+    "time": "2017-07-23",
+    "name": "FivePlus-正佳店",
+    "data": 961
+  },
+  {
+    "time": "2017-07-24",
+    "name": "FivePlus-正佳店",
+    "data": 570
+  },
+  {
+    "time": "2017-07-25",
+    "name": "FivePlus-正佳店",
+    "data": 576
+  },
+  {
+    "time": "2017-07-26",
+    "name": "FivePlus-正佳店",
+    "data": 483
+  },
+  {
+    "time": "2017-07-27",
+    "name": "FivePlus-正佳店",
+    "data": 554
+  },
+  {
+    "time": "2017-07-28",
+    "name": "FivePlus-正佳店",
+    "data": 591
+  },
+  {
+    "time": "2017-07-29",
+    "name": "FivePlus-正佳店",
+    "data": 1165
+  },
+  {
+    "time": "2017-07-30",
+    "name": "FivePlus-正佳店",
+    "data": 1062
+  },
+  {
+    "time": "2017-07-31",
+    "name": "FivePlus-正佳店",
+    "data": 635
+  }
+]
