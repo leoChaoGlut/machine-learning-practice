@@ -7,33 +7,42 @@ from QLearning import QLearning
 """
 
 if __name__ == '__main__':
-    epsilon = 0.9
-    alpha = 0.1
-    gamma = 0.9
+    refresh_interval = 0.01  # 该参数用于定时显示迷宫情况
+
+    episode = 100  # 训练多少回合
+
+    epsilon = 0.9  # 使用历史经验的概率, 若值为0.9,则有 90% 的情况下,会根据历史经验选择 action, 10% 的情况下,随机选择 action
+    learning_rate = 0.01  # 根据公式可知,该值越大,则旧训练数据被保留的就越少
+    discount_factor = 0.9  #
 
     max_row = 5
     max_col = 5
     actions = [Actions.LEFT, Actions.RIGHT, Actions.UP, Actions.DOWN]
     worker = Point(0, 0)
-    treasure = Point(3, 4)
+    treasure = Point(2, 2)
+    obstacles = [Point(1, 2), Point(2, 1)]
 
     env = Maze(
         max_row=max_row,
         max_col=max_col,
         worker=worker,
         treasure=treasure,
-        refresh_interval=0.3
+        obstacles=obstacles,
+        refresh_interval=refresh_interval
     )
     rl = QLearning(
         epsilon=epsilon,
-        alpha=alpha,
-        gamma=gamma,
+        learning_rate=learning_rate,
+        discount_factor=discount_factor,
         max_row=max_row,
         max_col=max_col,
         actions=actions
     )
+    step_counter_arr = []
 
-    for episode in range(10):
+    env.display()
+
+    for eps in range(episode):
 
         cur_state = env.reset()
         step_counter = 0
@@ -57,7 +66,12 @@ if __name__ == '__main__':
             cur_state = next_state
 
             if reward != 0:
-                print('steps:{}'.format(step_counter))
-                print(rl.q_table)
-                input()
                 break
+        if reward > 0:
+            step_counter_arr.append(step_counter)
+
+        print('round:{}, reward:{}, steps:{}'.format(eps, reward, step_counter))
+        # time.sleep(3)
+
+    print('steps record:{}'.format(step_counter_arr))
+    print(rl.q_table)

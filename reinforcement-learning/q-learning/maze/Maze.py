@@ -22,7 +22,7 @@ class Maze:
             self.obstacles = []
 
     def move(self, action):
-        print(action)
+        # print(action)
 
         if action == Actions.LEFT:
             if self.worker.col > 0:
@@ -60,6 +60,8 @@ class Maze:
         arr = np.zeros((self.max_row, self.max_col))
         arr[self.treasure.row][self.treasure.col] = 8
         arr[self.worker.row][self.worker.col] = 1
+        for obstacle in self.obstacles:
+            arr[obstacle.row][obstacle.col] = 4
         print(arr)
         time.sleep(self.refresh_interval)
 

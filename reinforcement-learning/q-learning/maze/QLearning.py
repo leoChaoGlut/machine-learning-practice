@@ -3,9 +3,9 @@ import pandas as pd
 
 
 class QLearning:
-    def __init__(self, epsilon, alpha, gamma, max_row, max_col, actions):
-        self.alpha = alpha
-        self.gamma = gamma
+    def __init__(self, epsilon, learning_rate, discount_factor, max_row, max_col, actions):
+        self.learning_rate = learning_rate
+        self.discount_factor = discount_factor
         self.epsilon = epsilon
         self.actions = actions
 
@@ -35,8 +35,7 @@ class QLearning:
     def learn(self, cur_state, action, reward, next_state):
         q_predict = self.q_table.loc[cur_state, action]
         if reward == 0:
-            q_reality = reward + self.gamma * self.q_table.loc[next_state, :].max()
+            q_reality = reward + self.discount_factor * self.q_table.loc[next_state, :].max()
         else:  # 代表碰到 obstacle or tresure
             q_reality = reward
-        self.q_table.loc[cur_state, action] += self.alpha * (q_reality - q_predict)
-
+        self.q_table.loc[cur_state, action] += self.learning_rate * (q_reality - q_predict)
