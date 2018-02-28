@@ -1,16 +1,21 @@
 from Maze import Maze, Point, Actions
 from QLearning import QLearning
 
+"""
+使用强化学习走迷宫,由于刚开始的状态是随机的,所以当迷宫面积较大的时候,可能会导致训练时间太长,可以尝试利用 A* 算法原理,
+帮助更快找到treasure
+"""
+
 if __name__ == '__main__':
     epsilon = 0.9
     alpha = 0.1
     gamma = 0.9
 
-    max_row = 4
-    max_col = 4
+    max_row = 5
+    max_col = 5
     actions = [Actions.LEFT, Actions.RIGHT, Actions.UP, Actions.DOWN]
     worker = Point(0, 0)
-    treasure = Point(2, 2)
+    treasure = Point(3, 4)
 
     env = Maze(
         max_row=max_row,

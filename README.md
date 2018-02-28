@@ -9,3 +9,6 @@
   - regression   
   
 - neural-network
+- reinforcement-learning
+  - q-learning
+    - maze 迷宫例子
