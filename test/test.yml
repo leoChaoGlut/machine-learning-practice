@@ -1,3 +1,14 @@
-a:
-  b:
-    c:
+Agent:
+  Worker: A point
+Environment:
+  CoordinateSystem
+Reward:
+  treasure
+  obstacle
+Action:
+  up
+  down
+  left
+  right
+State:
+
