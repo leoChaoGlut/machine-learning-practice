@@ -33,7 +33,7 @@ class NeuralNetwork:
             self.activation_deriv = tanh_deriv
 
         self.weights = []
-        for i in range(1, len(layers) - 1):
+        for i in range(1, len(layers) - 1):  # ??
             self.weights.append((2 * np.random.random((layers[i - 1] + 1, layers[i] + 1)) - 1) * 0.25)
             self.weights.append((2 * np.random.random((layers[i] + 1, layers[i + 1])) - 1) * 0.25)
 
@@ -74,7 +74,14 @@ class NeuralNetwork:
 
 def exec():
     nn = NeuralNetwork([2, 2, 1], 'tanh')
-    x = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+    x = np.array(
+        [
+            [0, 0],
+            [0, 1],
+            [1, 0],
+            [1, 1]
+        ]
+    )
     y = np.array([1, 0, 0, 1])
     nn.fit(x, y, 0.1, 10000)
     for i in [[0, 0], [0, 1], [1, 0], [1, 1]]:
