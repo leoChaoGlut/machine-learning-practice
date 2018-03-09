@@ -1,37 +1,19 @@
-from keras import Sequential
-from keras.layers import Dense, Activation
-from sklearn import datasets
+import pandas as pd
+from keras.layers import Dense
+from keras.models import Sequential
 from sklearn.model_selection import train_test_split
 
-iris = datasets.load_iris()
+data = pd.read_csv('iris.csv')
 
-X = iris.data
-y = iris.target
+label_index = len(data.columns) - 1
+feature_count = label_index
 
-label_col = ['label']
+X = data.iloc[:, 0:label_index]
+y = data.iloc[:, label_index]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 
-input_dim = len(iris.feature_names)
+model = Sequential()
 
-model = Sequential([
-    Dense(8, input_dim=input_dim),
-    Activation('sigmoid'),
-    Dense(1),
-    Activation('softmax'),
-])
-
-# model.summary()
-
-model.compile(
-    optimizer='sgd',
-    loss='mean_squared_error',
-    metrics=['accuracy']
-)
-
-model.fit(X_train, y_train, epochs=5, batch_size=32)
-
-lasses = model.predict(X_test, batch_size=128)
-
-print(lasses)
-print(y_test)
+model.add(Dense(units=feature_count, input_dim=feature_count))
+model.add(Dense(1))

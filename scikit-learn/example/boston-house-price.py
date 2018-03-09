@@ -24,7 +24,7 @@ models.append(AdaBoostRegressor())
 
 def evaluation():
     for model in models:
-        score = cross_val_score(estimator=model, X=X, y=y, cv=KFold(10), scoring='neg_mean_absolute_error')
+        score = cross_val_score(estimator=model, X=X, y=y, cv=KFold(10), scoring='r2')
         print(score.mean(), score.std())
 
 
@@ -43,8 +43,8 @@ def visualization():
 
 
 def exec():
-    visualization()
-    # evaluation()
+    # visualization()
+    evaluation()
 
 
 if __name__ == '__main__':
