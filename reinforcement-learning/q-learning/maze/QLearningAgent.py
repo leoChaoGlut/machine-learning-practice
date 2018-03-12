@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-class QLearning:
+class QLearningAgent:
     def __init__(self, epsilon, learning_rate, discount_factor, max_row, max_col, actions):
         self.learning_rate = learning_rate
         self.discount_factor = discount_factor
@@ -25,7 +25,7 @@ class QLearning:
         return action
 
     def build_index(self, max_row, max_col):
-        from Maze import Point
+        from MazeEnv import Point
         index = []
         for row in range(max_row):
             for col in range(max_col):

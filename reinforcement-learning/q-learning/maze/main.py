@@ -1,5 +1,6 @@
-from Maze import Maze, Point, Actions
-from QLearning import QLearning
+from MazeActions import LEFT, RIGHT, UP, DOWN
+from MazeEnv import MazeEnv, Point
+from QLearningAgent import QLearningAgent
 
 """
 使用强化学习走迷宫,由于刚开始的状态是随机的,所以当迷宫面积较大的时候,可能会导致训练时间太长,可以尝试利用 A* 算法原理,
@@ -12,7 +13,7 @@ from QLearning import QLearning
 """
 
 if __name__ == '__main__':
-    refresh_interval = 0.1  # 该参数用于定时显示迷宫情况
+    refresh_interval = 0.05  # 该参数用于定时显示迷宫情况
 
     episode = 50  # 训练多少回合
 
@@ -22,12 +23,12 @@ if __name__ == '__main__':
 
     max_row = 4
     max_col = 4
-    actions = [Actions.LEFT, Actions.RIGHT, Actions.UP, Actions.DOWN]
+    actions = [LEFT, RIGHT, UP, DOWN]
     worker = Point(0, 0)
     treasure = Point(2, 2)
     obstacles = [Point(1, 2), Point(2, 1)]
 
-    env = Maze(
+    env = MazeEnv(
         max_row=max_row,
         max_col=max_col,
         worker=worker,
@@ -35,7 +36,7 @@ if __name__ == '__main__':
         obstacles=obstacles,
         refresh_interval=refresh_interval
     )
-    rl = QLearning(
+    agent = QLearningAgent(
         epsilon=epsilon,
         learning_rate=learning_rate,
         discount_factor=discount_factor,
@@ -57,11 +58,11 @@ if __name__ == '__main__':
 
             env.display()
 
-            action = rl.choose_action(cur_state)
+            action = agent.choose_action(cur_state)
 
             next_state, reward = env.move(action)
 
-            rl.learn(
+            agent.learn(
                 cur_state=cur_state,
                 action=action,
                 reward=reward,
@@ -79,5 +80,5 @@ if __name__ == '__main__':
         print('round:{}, reward:{}, steps:{}'.format(eps, reward, step_counter))
         # time.sleep(1) # 如果想看模型进步历程,可以将这一行的注释去掉
 
+    print(agent.q_table)
     print('steps record:{}'.format(step_counter_arr))
-    print(rl.q_table)

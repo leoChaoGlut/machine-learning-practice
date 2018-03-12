@@ -3,8 +3,10 @@ import time
 
 import numpy as np
 
+from MazeActions import LEFT, RIGHT, UP, DOWN
 
-class Maze:
+
+class MazeEnv:
     def __init__(self, max_row, max_col, worker, treasure, refresh_interval, obstacles=None):
         self.max_row = max_row
         self.max_col = max_col
@@ -24,16 +26,16 @@ class Maze:
     def move(self, action):
         # print(action)
 
-        if action == Actions.LEFT:
+        if action == LEFT:
             if self.worker.col > 0:
                 self.worker.col -= 1
-        elif action == Actions.RIGHT:
+        elif action == RIGHT:
             if self.worker.col < self.max_col - 1:
                 self.worker.col += 1
-        elif action == Actions.UP:
+        elif action == UP:
             if self.worker.row > 0:
                 self.worker.row -= 1
-        elif action == Actions.DOWN:
+        elif action == DOWN:
             if self.worker.row < self.max_row - 1:
                 self.worker.row += 1
         else:
@@ -79,10 +81,3 @@ class Point:
 
     def clone(self):
         return Point(self.row, self.col)
-
-
-class Actions:
-    LEFT = 'left'
-    RIGHT = 'right'
-    UP = 'up'
-    DOWN = 'down'
