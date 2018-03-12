@@ -64,7 +64,6 @@ def main():
 
 def test():
     data = pd.read_csv('../data/iris.csv')
-
     label_index = len(data.columns) - 1
     feature_count = label_index
     label_count = 1
