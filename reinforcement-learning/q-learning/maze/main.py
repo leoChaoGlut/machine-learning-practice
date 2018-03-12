@@ -33,7 +33,10 @@ if __name__ == '__main__':
     actions = [LEFT, RIGHT, UP, DOWN]
     worker = Point(0, 0)
     treasure = Point(2, 2)
-    obstacles = [Point(1, 2), Point(2, 1)]
+    obstacles = [
+        Point(1, 2),
+        Point(2, 1),
+    ]
 
     env = MazeEnv(
         max_row=max_row,
@@ -49,11 +52,12 @@ if __name__ == '__main__':
         discount_factor=discount_factor,
         actions=actions
     )
-    succeed_step_counter_arr = []
+    successful_step_counter_arr = []
+    failed_step_counter_arr = []
 
     env.display()
 
-    for eps in range(1, episode):
+    for eps in range(1, episode + 1):
 
         cur_state = env.reset()
         step_counter = 0
@@ -80,13 +84,26 @@ if __name__ == '__main__':
                 break
 
         if reward > 0:
-            succeed_step_counter_arr.append(step_counter)
+            successful_step_counter_arr.append(step_counter)
+        elif reward < 0:
+            failed_step_counter_arr.append(step_counter)
 
         print(
-            'episode: {}, reward: {}, steps: {}, succeed steps record: {}'
-                .format(eps, reward, step_counter, succeed_step_counter_arr)
+            'total episode: {}\n'
+            'current episode: {}\n'
+            'reward: {}\nsteps: {}\n'
+            'successful steps record: {}\n'
+            'failed steps record: {}'
+                .format(
+                episode,
+                eps,
+                reward,
+                step_counter,
+                successful_step_counter_arr,
+                failed_step_counter_arr
+            )
         )
         input('press enter to next episode...')
 
-    # print(agent.q_table)
-    print('succeed steps record: {}'.format(succeed_step_counter_arr))
+        # print(agent.q_table)
+        # print('successful steps record: {}'.format(succeed_step_counter_arr))
