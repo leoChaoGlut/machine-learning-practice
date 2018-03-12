@@ -6,16 +6,23 @@ from QLearningAgent import QLearningAgent
 使用强化学习走迷宫,由于刚开始的状态是随机的,所以当迷宫面积较大的时候,可能会导致训练时间太长,可以尝试利用 A* 算法原理,
 帮助更快找到treasure
 
-1: worker
-4: obstacle
-8: treasure
+迷宫展示字典:
+    1: worker
+    4: obstacle
+    8: treasure
+
+reward字典:
+    -1: obstacle
+     1: treasure
+
+经测试,跑完 30 个 episode,约耗时 30s
 
 """
 
 if __name__ == '__main__':
     refresh_interval = 0.05  # 该参数用于定时显示迷宫情况
 
-    episode = 50  # 训练多少回合
+    episode = 30  # 训练多少回合
 
     epsilon = 0.9  # 使用历史经验的概率, 若值为0.9,则有 90% 的情况下,会根据历史经验选择 action, 10% 的情况下,随机选择 action
     learning_rate = 0.01  # 根据公式可知,该值越大,则旧训练数据被保留的就越少
@@ -40,15 +47,13 @@ if __name__ == '__main__':
         epsilon=epsilon,
         learning_rate=learning_rate,
         discount_factor=discount_factor,
-        max_row=max_row,
-        max_col=max_col,
         actions=actions
     )
-    step_counter_arr = []
+    succeed_step_counter_arr = []
 
     env.display()
 
-    for eps in range(episode):
+    for eps in range(1, episode):
 
         cur_state = env.reset()
         step_counter = 0
@@ -75,10 +80,13 @@ if __name__ == '__main__':
                 break
 
         if reward > 0:
-            step_counter_arr.append(step_counter)
+            succeed_step_counter_arr.append(step_counter)
 
-        print('round:{}, reward:{}, steps:{}'.format(eps, reward, step_counter))
-        # time.sleep(1) # 如果想看模型进步历程,可以将这一行的注释去掉
+        print(
+            'episode: {}, reward: {}, steps: {}, succeed steps record: {}'
+                .format(eps, reward, step_counter, succeed_step_counter_arr)
+        )
+        input('press enter to next episode...')
 
-    print(agent.q_table)
-    print('steps record:{}'.format(step_counter_arr))
+    # print(agent.q_table)
+    print('succeed steps record: {}'.format(succeed_step_counter_arr))
