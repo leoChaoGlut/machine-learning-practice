@@ -1,4 +1,4 @@
-## Project Structure
+## Major Modules
 
 - scikit-learn
   - classification
@@ -7,8 +7,8 @@
   - feature_selection
   - preprocessing
   - regression   
-  
-- neural-network
+
 - reinforcement-learning
   - q-learning
     - maze 迷宫例子
+
