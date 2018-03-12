@@ -28,13 +28,13 @@ class Maze:
             if self.worker.col > 0:
                 self.worker.col -= 1
         elif action == Actions.RIGHT:
-            if self.worker.col < self.max_col - 2:
+            if self.worker.col < self.max_col - 1:
                 self.worker.col += 1
         elif action == Actions.UP:
             if self.worker.row > 0:
                 self.worker.row -= 1
         elif action == Actions.DOWN:
-            if self.worker.row < self.max_row - 2:
+            if self.worker.row < self.max_row - 1:
                 self.worker.row += 1
         else:
             raise Exception('Not supported action: {}'.format(action))
