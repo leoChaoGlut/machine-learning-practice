@@ -1,3 +1,6 @@
+import random
+import sys
+
 import numpy as np
 import pandas as pd
 
@@ -14,9 +17,8 @@ class QLearningAgent:
         self.create_state_if_not_exists(state)
 
         if np.random.uniform() < self.epsilon:
-            action = self.q_table.loc[state, :]
-            action = action.reindex(np.random.permutation(action.index))
-            action = action.idxmax()
+            actions = self.q_table.loc[state, :]
+            action = self.choose_best_action(actions)
         else:
             action = np.random.choice(self.actions)
 
@@ -51,3 +53,28 @@ class QLearningAgent:
 
     def not_finished(self, reward):
         return reward == 0
+
+    def choose_best_action(self, actions):
+        q_table_cols = self.q_table.columns
+        max_action_value = -sys.maxsize
+        max_action_value_list = []
+
+        for idx in range(len(q_table_cols)):
+            action_value = actions[idx]
+            q_tabl_col = q_table_cols[idx]
+
+            if action_value > max_action_value:
+                max_action_value = action_value
+                max_action_value_list = [q_tabl_col]
+            elif action_value == max_action_value:
+                max_action_value_list.append(q_tabl_col)
+            else:
+                continue
+
+        if len(max_action_value_list) > 1:
+            random_action_index = random.randint(0, len(max_action_value_list) - 1)
+            best_action = max_action_value_list[random_action_index]
+        else:
+            best_action = max_action_value_list[0]
+
+        return best_action
